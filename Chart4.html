@@ -24,8 +24,6 @@
 
             var options = {
                 title: '外資',
-                width: 200,
-                height: 150,
                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
@@ -48,8 +46,6 @@
 
             var options = {
                 title: '投信',
-                width: 200,
-                height: 150,
                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
@@ -72,9 +68,7 @@
 
             var options = {
                 title: '避險',
-                width: 200,
-                height: 150,
-                bar: { groupWidth: '90%' },
+                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
             var chart = new google.visualization.ColumnChart(document.getElementById('Chart3_Div'));
@@ -95,8 +89,6 @@
 
             var options = {
                 title: '法人',
-                width: 200,
-                height: 150,
                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
@@ -119,8 +111,6 @@
 
             var options = {
                 title: '控盤',
-                width: 200,
-                height: 150,
                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
@@ -143,8 +133,6 @@
 
             var options = {
                 title: '散戶',
-                width: 200,
-                height: 150,
                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
@@ -167,9 +155,7 @@
 
             var options = {
                 title: '融資',
-                width: 200,
-                height: 150,
-                bar: { groupWidth: '90%' },
+                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
             var chart = new google.visualization.ColumnChart(document.getElementById('Chart7_Div'));
@@ -190,8 +176,6 @@
 
             var options = {
                 title: '派收',
-                width: 200,
-                height: 150,
                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
@@ -209,9 +193,7 @@
 
             var options = {
                 title: '主力密度',
-                width: 400,
-                height: 150,
-                hAxis: { title: 'Day', minValue: -10, maxValue: 0 },
+                 hAxis: { title: 'Day', minValue: -10, maxValue: 0 },
                 vAxis: { title: 'Star' },
                 legend: 'none'
             };
@@ -225,28 +207,47 @@
     </script>
 </head>
 <body>
-test
-    <table class="columns">
-        <tr>
-            <td><div id="Chart1_Div" style="border: 1px solid #ccc"></div></td>
-            <td><div id="Chart5_Div" style="border: 1px solid #ccc"></div></td>
-        </tr>
-        <tr>
-            <td><div id="Chart2_Div" style="border: 1px solid #ccc"></div></td>
-            <td><div id="Chart6_Div" style="border: 1px solid #ccc"></div></td>
-        </tr>
-        <tr>
-            <td><div id="Chart3_Div" style="border: 1px solid #ccc"></div></td>
-            <td><div id="Chart7_Div" style="border: 1px solid #ccc"></div></td>
-        </tr>
-        <tr>
-            <td><div id="Chart4_Div" style="border: 1px solid #ccc"></div></td>
-            <td><div id="Chart8_Div" style="border: 1px solid #ccc"></div></td>
-        </tr>
-        <tr>
-            <td colspan="2"><div id="Chart9_Div" style="border: 1px solid #ccc"></div></td>
-           
-        </tr>
+    
+    <table align="center">
+      <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart1_Div" style="width: 350px; height:180px;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart5_Div" style="width: 350px; height:180px;"></div>
+        </td>
+      </tr>
+       <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart2_Div" style="width: 350px; height:180px;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart6_Div" style="width: 350px; height:180px;"></div>
+        </td>
+      </tr>
+         <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart3_Div" style="width: 350px; height:180px;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart7_Div" style="width: 350px; height:180px;"></div>
+        </td>
+      </tr>
+          <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart4_Div" style="width: 350px; height:180px;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart8_Div" style="width: 350px; height:180px;"></div>
+        </td>
+      </tr>
+      <tr>
+        <td colSpan=2>
+          <div id="Chart9_Div" style="align: center; width: 700px; height: 15px;"></div>
+        </td>
+      </tr>
     </table>
+
+   
 </body>
 </html>
