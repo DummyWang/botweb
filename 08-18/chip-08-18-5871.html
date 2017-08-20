@@ -1,0 +1,237 @@
+﻿<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart1);
+        google.charts.setOnLoadCallback(drawChart2);
+        google.charts.setOnLoadCallback(drawChart3);
+        google.charts.setOnLoadCallback(drawChart4);
+        google.charts.setOnLoadCallback(drawChart5);
+        google.charts.setOnLoadCallback(drawChart6);
+        google.charts.setOnLoadCallback(drawChart7);
+        google.charts.setOnLoadCallback(drawChart8);
+        google.charts.setOnLoadCallback(drawChart9);
+
+
+        //Chart1
+        function drawChart1() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],['D10',205,'red'],['D9',363,'red'],['D8',-1207,'green'],['D7',-1553,'green'],['D6',2905,'red'],['D5',-1569,'green'],['D4',3673,'red'],['D3',685,'red'],['D2',1157,'red'],['D1',-1486,'green']               
+            ]);
+
+
+            var options = {
+                title: '外資買賣',
+                titleTextStyle: {fontSize:'14'},
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart1_Div'));
+
+            chart.draw(data , options);
+        }
+
+        //Chart2
+        function drawChart2() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],['D10',-25,'green'],['D9',322,'red'],['D8',-1,'green'],['D7',0,'green'],['D6',-421,'green'],['D5',-130,'green'],['D4',0,'green'],['D3',0,'green'],['D2',0,'green'],['D1',0,'green']                
+            ]);
+
+
+            var options = {
+                title: '投信買賣',
+                titleTextStyle: {fontSize:'14'},
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart2_Div'));
+
+            chart.draw(data, options);
+        }
+
+        //Chart3
+        function drawChart3() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],['D10',-36,'green'],['D9',475,'red'],['D8',-247,'green'],['D7',513,'red'],['D6',-675,'green'],['D5',-24,'green'],['D4',-189,'green'],['D3',82,'red'],['D2',-627,'green'],['D1',26,'red']
+               ]);
+
+
+            var options = {
+                title: '自營避險',
+                titleTextStyle: {fontSize:'14'},
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart3_Div'));
+
+            chart.draw(data, options);
+        }
+        //Chart4
+        function drawChart4() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],['D10',136,'red'],['D9',1216,'red'],['D8',-1450,'green'],['D7',-1093,'green'],['D6',1406,'red'],['D5',-1743,'green'],['D4',3424,'red'],['D3',785,'red'],['D2',507,'red'],['D1',-1420,'green']
+                 ]);
+
+
+            var options = {
+                title: '三大法人',
+                titleTextStyle: {fontSize:'14'},
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart4_Div'));
+
+            chart.draw(data, options);
+        }
+
+        //Chart5
+        function drawChart5() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],['D10',-146,'green'],['D9',182,'red'],['D8',-551,'green'],['D7',-436,'green'],['D6',273,'red'],['D5',-1409,'green'],['D4',1855,'red'],['D3',629,'red'],['D2',369,'red'],['D1',-959,'green']             
+            ]);
+
+
+            var options = {
+                title: '大額買賣',
+                titleTextStyle: {fontSize:'14'},
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart5_Div'));
+
+            chart.draw(data, options);
+        }
+
+        //Chart6
+        function drawChart6() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],['D10',82,'red'],['D9',-360,'green'],['D8',506,'red'],['D7',580,'red'],['D6',374,'red'],['D5',1233,'red'],['D4',-1159,'green'],['D3',-421,'green'],['D2',-228,'green'],['D1',778,'red']
+                   ]);
+
+
+            var options = {
+                title: '散戶買賣',
+                titleTextStyle: {fontSize:'14'},
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart6_Div'));
+
+            chart.draw(data, options);
+        }
+
+        //Chart7
+        function drawChart7() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],['D10',4,'red'],['D9',101,'red'],['D8',316,'red'],['D7',4,'red'],['D6',-200,'green'],['D5',672,'red'],['D4',-758,'green'],['D3',-2,'green'],['D2',-72,'green'],['D1',341,'red']
+                   ]);
+
+
+            var options = {
+                title: '融資買賣',
+                titleTextStyle: {fontSize:'14'},
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart7_Div'));
+
+            chart.draw(data, options);
+        }
+        //Chart8
+        function drawChart8() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'VOL', { role: 'style' }],['D10',-27,'green'],['D9',62,'red'],['D8',-71,'green'],['D7',-107,'green'],['D6',-4,'green'],['D5',-206,'green'],['D4',193,'red'],['D3',123,'red'],['D2',82,'red'],['D1',-210,'green']              
+            ]);
+
+
+            var options = {
+                title: '分公司買賣差',
+                titleTextStyle: {fontSize:'14'},
+                bar: { groupWidth: '90%' },
+                legend: { position: 'none' },
+            };
+            var chart = new google.visualization.ColumnChart(document.getElementById('Chart8_Div'));
+
+            chart.draw(data, options);
+        }
+
+        function drawChart9() {
+            var data = google.visualization.arrayToDataTable([
+                ['Day', 'value', { role: 'style' }],[-10,-1,'green'],[-9,-1,'red'],[-8,-1,'green'],[-7,-1,'green'],[-6,-1,'red'],[-5,-1,'green'],[-4,-1,'red'],[-3,-1,'red'],[-2,-1,'red'],[-1,-1,'green'],[-10,-2,'red'],[-9,-2,'red'],[-8,-2,'red'],[-7,-2,'green'],[-6,-2,'red'],[-5,-2,'red'],[-4,-2,'red'],[-3,-2,'red'],[-2,-2,'red'],[-1,-2,'red'],[-10,-3,'red'],[-9,-3,'red'],[-8,-3,'red'],[-7,-3,'red'],[-6,-3,'red'],[-5,-3,'red'],[-4,-3,'red'],[-3,-3,'red'],[-2,-3,'red'],[-1,-3,'red'],[-10,-4,'red'],[-9,-4,'red'],[-8,-4,'red'],[-7,-4,'red'],[-6,-4,'red'],[-5,-4,'red'],[-4,-4,'red'],[-3,-4,'red'],[-2,-4,'red'],[-1,-4,'red'],[-10,-5,'red'],[-9,-5,'red'],[-8,-5,'red'],[-7,-5,'red'],[-6,-5,'red'],[-5,-5,'red'],[-4,-5,'red'],[-3,-5,'red'],[-2,-5,'red'],[-1,-5,'red'] 
+            ]);
+
+
+            var options = {
+                title: '主力分布',
+                titleTextStyle: {fontSize:'14'},
+                hAxis: { title: 'Day' },
+                vAxis: { title: 'Star' },
+                legend: 'none'
+            };
+
+
+            var chart = new google.visualization.ScatterChart(document.getElementById('Chart9_Div'));
+
+            chart.draw(data, options);
+        }
+
+    </script>
+</head>
+<body>
+    <table align="center">
+         <tr >
+          <td colspan="2" align="center">
+        
+            <div id="title_Div" style="font-size:28px;border: 1px solid #ccc;"> 中租-KY (5871)</div>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart1_Div" style="width: 400px; height:180px; border: 1px solid #ccc;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart5_Div" style="width: 400px; height:180px; border: 1px solid #ccc;"></div>
+        </td>
+      </tr>
+       <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart2_Div" style="width: 400px; height:180px; border: 1px solid #ccc;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart6_Div" style="width: 400px; height:180px; border: 1px solid #ccc;"></div>
+        </td>
+      </tr>
+         <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart3_Div" style="width: 400px; height:180px; border: 1px solid #ccc;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart7_Div" style="width: 400px; height:180px; border: 1px solid #ccc;"></div>
+        </td>
+      </tr>
+          <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart4_Div" style="width: 400px; height:180px; border: 1px solid #ccc;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart8_Div" style="width: 400px; height:180px; border: 1px solid #ccc;"></div>
+        </td>
+      </tr>
+       <tr valign="top">
+          <td colspan="2">
+        
+            <div id="Chart9_Div" style="align: center;width: 800px; height:180px; border: 1px solid #ccc;"></div>
+        </td>
+      </tr>
+         <tr valign="top">
+          <td colspan="2">
+        
+            <div id="time_Div">更新時間:08-18-03-48</div><br>
+             <a href="https://www.stockdog.com.tw/m/index.php?type=3&sid=5871">外部參考</a>
+        </td>
+      </tr>
+    </table>
+</body>
+</html>
+
