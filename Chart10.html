@@ -24,9 +24,7 @@
 
             var options = {
                 title: '外資',
-                width: 350,
-                height: 200,
-                bar: { groupWidth: '90%' },
+                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
             var chart = new google.visualization.ColumnChart(document.getElementById('Chart1_Div'));
@@ -44,8 +42,6 @@
 
             var options = {
                 title: '投信',
-                 width: 350,
-                height: 200,
                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
@@ -64,8 +60,6 @@
 
             var options = {
                 title: '避險',
-                 width: 350,
-                height: 200,
                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
@@ -83,9 +77,7 @@
 
             var options = {
                 title: '三大法人',
-              width: 350,
-                height: 200,
-                bar: { groupWidth: '90%' },
+                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
             var chart = new google.visualization.ColumnChart(document.getElementById('Chart4_Div'));
@@ -103,9 +95,7 @@
 
             var options = {
                 title: '大額買盤',
-               width: 350,
-                height: 200,
-                bar: { groupWidth: '90%' },
+                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
             var chart = new google.visualization.ColumnChart(document.getElementById('Chart5_Div'));
@@ -123,9 +113,7 @@
 
             var options = {
                 title: '散戶',
-                width: 350,
-                height: 200,
-                bar: { groupWidth: '90%' },
+                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
             var chart = new google.visualization.ColumnChart(document.getElementById('Chart6_Div'));
@@ -143,9 +131,7 @@
 
             var options = {
                 title: '融資',
-                width: 350,
-                height: 200,
-                bar: { groupWidth: '90%' },
+                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
             var chart = new google.visualization.ColumnChart(document.getElementById('Chart7_Div'));
@@ -162,9 +148,7 @@
 
             var options = {
                 title: '買賣分公司',
-                width: 350,
-                height: 200,
-                bar: { groupWidth: '90%' },
+                 bar: { groupWidth: '90%' },
                 legend: { position: 'none' },
             };
             var chart = new google.visualization.ColumnChart(document.getElementById('Chart8_Div'));
@@ -182,7 +166,7 @@
             var options = {
                 title: '主力密度',
                 width: 700,
-                height: 200,
+                height: 150,
                 hAxis: { title: 'Day', minValue: -10, maxValue: 0 },
                 vAxis: { title: 'Star' },
                 legend: 'none'
@@ -197,27 +181,44 @@
     </script>
 </head>
 <body>
-    <table class="columns">
-        <tr>
-            <td><div id="Chart1_Div" style="border: 1px solid #ccc"></div></td>
-            <td><div id="Chart5_Div" style="border: 1px solid #ccc"></div></td>
-        </tr>
-        <tr>
-            <td><div id="Chart2_Div" style="border: 1px solid #ccc"></div></td>
-            <td><div id="Chart6_Div" style="border: 1px solid #ccc"></div></td>
-        </tr>
-        <tr>
-            <td><div id="Chart3_Div" style="border: 1px solid #ccc"></div></td>
-            <td><div id="Chart7_Div" style="border: 1px solid #ccc"></div></td>
-        </tr>
-        <tr>
-            <td><div id="Chart4_Div" style="border: 1px solid #ccc"></div></td>
-            <td><div id="Chart8_Div" style="border: 1px solid #ccc"></div></td>
-        </tr>
-        <tr>
-            <td colspan="2"><div id="Chart9_Div" style="border: 1px solid #ccc"></div></td>
-           
-        </tr>
+    <table align="center">
+      <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart1_Div" style="width: 350px; height:180px;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart5_Div" style="width: 350px; height:180px;"></div>
+        </td>
+      </tr>
+       <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart2_Div" style="width: 350px; height:180px;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart6_Div" style="width: 350px; height:180px;"></div>
+        </td>
+      </tr>
+         <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart3_Div" style="width: 350px; height:180px;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart7_Div" style="width: 350px; height:180px;"></div>
+        </td>
+      </tr>
+          <tr valign="top">
+        <td style="width: 50%;">
+          <div id="Chart4_Div" style="width: 350px; height:180px;"></div>
+        </td>
+        <td style="width: 50%;">
+          <div id="Chart8_Div" style="width: 350px; height:180px;"></div>
+        </td>
+      </tr>
+      <tr align="top">
+        <td colSpan=2>
+          <div id="Chart9_Div" style="align: center; width: 700px; height: 150px;"></div>
+        </td>
+      </tr>
     </table>
 </body>
 </html>
