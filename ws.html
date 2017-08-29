@@ -1,12 +1,7 @@
 <html>
 <head>
   <script language="javascript">
-function GetNowURL(){
-  top.frames["main"].frames["left"].location.href = top.leftURL;
-  top.frames["main"].frames["right"].location.href = top.rightURL;
-}  
-    
-        function QueryString(name) 
+  function QueryString(name) 
 {
 	var AllVars = window.location.search.substring(1);
 	var Vars = AllVars.split("&");
@@ -30,20 +25,24 @@ function QueryCookie(name) {
 	  
 function GetNowURL(site){
 	//var site=QueryCookie("site");
-	if (site=="1")
-	{
-    document.cookie = "site=1";
+	if (site==1)
+	{ //元富
+   	document.cookie = "site=1";
 	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
 	}
-	else if (site=="2")
-	{
-    document.cookie = "site=2";
+	else if (site==2)
+	{//群益
+    	document.cookie = "site=2";
 	top.frames["main"].location.href = "http://iwarrant.capital.com.tw/Mobile/WANT/mWSearch.aspx?ul="+QueryString("id");
-		
+	}
+	else if (site==3)
+	{//凱基
+    	document.cookie = "site=3";
+	top.frames["main"].location.href = "http://warrant.kgi.com/EDWEB/menu/warrSearch.aspx?underlying="+QueryString("id");
 	}
 	else
-	{ 
-    document.cookie ="site=1";
+	{ //預設:元富
+   	 document.cookie ="site=1";
 	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
 	}
 		
@@ -57,8 +56,9 @@ function GetNowURL(site){
 <body>
 <table align="right" valign="bottom">
 <tr>
-<td><input type="button" Value="元富證卷" onclick="GetNowURL('1');"></td>
-<td><input type="button" Value="群益證卷" onclick="GetNowURL('2');"></td>
+<td><input type="button" Value="凱基證券" onclick="GetNowURL('3');" style="width:100px;height:30px;border:2px #9999FF dashed;background-color:pink;"></td>
+<td><input type="button" Value="群益證券" onclick="GetNowURL('2');" style="width:100px;height:30px;border:2px #9999FF dashed;background-color:pink;"></td>
+<td><input type="button" Value="元富證券" onclick="GetNowURL('1');" style="width:100px;height:30px;border:2px #9999FF dashed;background-color:pink;"></td>
 </tr>
 </table>
    
