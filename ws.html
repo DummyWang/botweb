@@ -1,12 +1,67 @@
 <html>
 <head>
+  <script language="javascript">
+function GetNowURL(){
+  top.frames["main"].frames["left"].location.href = top.leftURL;
+  top.frames["main"].frames["right"].location.href = top.rightURL;
+}  
+    
+        function QueryString(name) 
+{
+	var AllVars = window.location.search.substring(1);
+	var Vars = AllVars.split("&");
+	for (i = 0; i < Vars.length; i++)
+	{
+		var Var = Vars[i].split("=");
+		if (Var[0] == name) return Var[1];
+	}
+	return "";
+}
+    //Query Cookies
+function QueryCookie(name) {
+   	var Vars =  document.cookie.split(';');
+	for (i = 0; i < Vars.length; i++)
+	{
+		var Var = Vars[i].split("=");
+		if (Var[0] == name) return Var[1];
+	}
+	return "";		
+}	  
+	  
+function GetNowURL(site){
+	//var site=QueryCookie("site");
+	if (site=="1")
+	{
+    document.cookie = "site=1";
+	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+	}
+	else if (site=="2")
+	{
+    document.cookie = "site=2";
+	top.frames["main"].location.href = "http://iwarrant.capital.com.tw/Mobile/WANT/mWSearch.aspx?ul="+QueryString("id");
+		
+	}
+	else
+	{ 
+    document.cookie ="site=1";
+	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+	}
+		
+ 
+  
+} 
+    
+</script>
+  
 </head>
 <body>
 <table>
 <tr>
-<td>1</td>
-<td>2</td>
+<td><input type="button" Value="元富證卷" onclick="GetNowURL('1');"></td>
+<td><input type="button" Value="群益證卷" onclick="GetNowURL('2');"></td>
 </tr>
 </table>
+   
+  
 </body>
 </html
