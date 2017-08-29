@@ -1,0 +1,9 @@
+<html> <head>
+<frameset rows=5%,95%>
+　　<frame src=demo1.htm name=navigateFrame>
+  <frame src=demo2.htm name=contentFrame>
+　　
+</frameset>
+</head> 
+<body> </body> 
+</html>
