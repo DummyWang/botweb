@@ -12,7 +12,17 @@
 	}
 	return "";
 }
-    
+    //Query Cookies
+function QueryCookie(name) {
+   	var Vars =  document.cookie.split(';');
+	for (i = 0; i < Vars.length; i++)
+	{
+		var Var = Vars[i].split("=");
+		if (Var[0] == name) return Var[1];
+	}
+	return "";		
+}	  
+	  
 function GetNowURL(){
   top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
   
