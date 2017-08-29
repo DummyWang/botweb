@@ -38,7 +38,7 @@ function iframeDidLoad() {
 	{ 
 	 document.getElementById('myIframe').src= "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
 	}
-    alert('Done');
+  
 }
 	  
 function GetNowURL(site){
@@ -75,13 +75,9 @@ function GetNowURL(site){
 <td><input id="s1" type="button" Value="群益證券" onclick="GetNowURL('2');" style="font-size:16px;font-weight: bold;width:100px;height:45px;border:2px #9999FF dashed;background-color:Orange;"></td>
 <td><input id="s2" type="button" Value="元富證券" onclick="GetNowURL('1');" style="font-size:16px;font-weight: bold;width:100px;height:45px;border:2px #9999FF dashed;background-color:Orange ;"></td>
 </tr>
-<tr>
- <td colspan="2" align="center">
-           <iframe id="myIframe" src="about:blank" onLoad="iframeDidLoad();"></iframe>
-        </td>
-        </tr>
+
 </table>
-   
+      <iframe id="myIframe" src="about:blank" onLoad="iframeDidLoad();"></iframe>
   
 </body>
 </html
