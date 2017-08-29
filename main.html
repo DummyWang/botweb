@@ -24,7 +24,21 @@ function QueryCookie(name) {
 }	  
 	  
 function GetNowURL(){
-  top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+	var site=QueryCookie("site");
+	if (site=="1")
+	{
+	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+	}
+	else if (site=="2")
+	{
+	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+	}
+	else
+	{ 
+	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+	}
+		
+ 
   
 }  
 </script>
