@@ -29,13 +29,13 @@ function GetNowURL(site){
 	{ //元富
    	document.cookie = "site=1";
 	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
-		alert(site+QueryString("id"));
+		
 	}
 	else if (site=="2")
 	{//群益
     	document.cookie = "site=2";
 	top.frames["main"].location.href = "http://iwarrant.capital.com.tw/Mobile/WANT/mWSearch.aspx?ul="+QueryString("id");
-	alert(site+QueryString("id"));
+	
 	}
 	//else if (site==3)
 	//{//凱基
@@ -46,7 +46,7 @@ function GetNowURL(site){
 	{ //預設:元富
    	 document.cookie ="site=1";
 	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
-	alert(site+QueryString("id"));
+	
 	}
 		
  
