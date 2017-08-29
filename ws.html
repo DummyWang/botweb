@@ -25,12 +25,12 @@ function QueryCookie(name) {
 	  
 function GetNowURL(site){
 	//var site=QueryCookie("site");
-	if (site==1)
+	if (site=="1")
 	{ //元富
    	document.cookie = "site=1";
 	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
 	}
-	else if (site==2)
+	else if (site=="2")
 	{//群益
     	document.cookie = "site=2";
 	top.frames["main"].location.href = "http://iwarrant.capital.com.tw/Mobile/WANT/mWSearch.aspx?ul="+QueryString("id");
@@ -59,8 +59,8 @@ function GetNowURL(site){
 <!--
 <td><input type="button" Value="凱基證券" onclick="GetNowURL('3');" style="width:100px;height:30px;border:2px #9999FF dashed;background-color:pink;"></td>
 -->
-<td><input type="button" Value="群益證券" onclick="GetNowURL(2);" style="font-size:14px;font-weight: bold;width:100px;height:50px;border:2px #9999FF dashed;background-color:pink;"></td>
-<td><input type="button" Value="元富證券" onclick="GetNowURL(1);" style="font-size:14px;font-weight: bold;width:100px;height:50px;border:2px #9999FF dashed;background-color:pink;"></td>
+<td><input type="button" Value="群益證券" onclick="GetNowURL('2');" style="font-size:14px;font-weight: bold;width:100px;height:50px;border:2px #9999FF dashed;background-color:pink;"></td>
+<td><input type="button" Value="元富證券" onclick="GetNowURL('1');" style="font-size:14px;font-weight: bold;width:100px;height:50px;border:2px #9999FF dashed;background-color:pink;"></td>
 </tr>
 </table>
    
