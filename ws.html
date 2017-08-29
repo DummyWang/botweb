@@ -35,11 +35,11 @@ function GetNowURL(site){
     	document.cookie = "site=2";
 	top.frames["main"].location.href = "http://iwarrant.capital.com.tw/Mobile/WANT/mWSearch.aspx?ul="+QueryString("id");
 	}
-	else if (site==3)
-	{//凱基
-    	document.cookie = "site=3";
-	top.frames["main"].location.href = "http://warrant.kgi.com/EDWEB/menu/warrSearch.aspx?underlying="+QueryString("id");
-	}
+	//else if (site==3)
+	//{//凱基
+    	//document.cookie = "site=3";
+	//top.frames["main"].location.href = "http://warrant.kgi.com/EDWEB/menu/warrSearch.aspx?underlying="+QueryString("id");
+	//}
 	else
 	{ //預設:元富
    	 document.cookie ="site=1";
@@ -56,7 +56,9 @@ function GetNowURL(site){
 <body>
 <table align="right" valign="top">
 <tr>
+<!--
 <td><input type="button" Value="凱基證券" onclick="GetNowURL('3');" style="width:100px;height:30px;border:2px #9999FF dashed;background-color:pink;"></td>
+-->
 <td><input type="button" Value="群益證券" onclick="GetNowURL('2');" style="width:100px;height:30px;border:2px #9999FF dashed;background-color:pink;"></td>
 <td><input type="button" Value="元富證券" onclick="GetNowURL('1');" style="width:100px;height:30px;border:2px #9999FF dashed;background-color:pink;"></td>
 </tr>
