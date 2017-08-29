@@ -1,8 +1,20 @@
 <html> <head>
   
   <script language="javascript">
+    function QueryString(name) 
+{
+	var AllVars = window.location.search.substring(1);
+	var Vars = AllVars.split("&");
+	for (i = 0; i < Vars.length; i++)
+	{
+		var Var = Vars[i].split("=");
+		if (Var[0] == name) return Var[1];
+	}
+	return "";
+}
+    
 function GetNowURL(){
-  top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul=3455";
+  top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="& QueryString("id");
   
 }  
 </script>
