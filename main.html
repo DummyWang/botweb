@@ -28,15 +28,18 @@ function GetNowURL(){
 	if (site=="1")
 	{
 	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+	top.frames["top"].document.getElementById("s2").style.color="blue";
 	}
 	else if (site=="2")
 	{
 	top.frames["main"].location.href = "http://iwarrant.capital.com.tw/Mobile/WANT/mWSearch.aspx?ul="+QueryString("id");
+		top.frames["top"].document.getElementById("s1").style.color="blue";
 		
 	}
 	else
 	{ 
 	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+		top.frames["top"].document.getElementById("s2").style.color="blue";
 	}
 		
  
