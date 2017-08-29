@@ -1,19 +1,19 @@
 <html> <head>
-<frameset rows=1%,99%  frameborder=0 framespacing=0>
-　　<frame src="javascript:void(0)" name='navigateFrame'>
-  <frame src="javascript:void(0)" name='contentFrame'>
-　　
-</frameset>
   
-  <script type="text/javascript">
-var mode=1;
-
-if( mode == 1 )
-    parent.contentFrame.location="http://webchip.tk/Chart10.html";
-else
-    parent.contentFrame.location="http://webchip.tk/Chart4.html";
+  <script language="javascript">
+function GetNowURL(){
+  top.frames["main"].location.href = "http://webchip.tk/Chart10.html";
+  
+}  
 </script>
   
+  
+<frameset rows="1%,99%"  frameborder="0" framespacing="0" onload="GetNowURL();">
+　 <frame name="top" src="about:blank">
+  <frame name="main" src="about:blank">　　
+</frameset>
+
+
 </head> 
 <body> </body> 
 </html>
