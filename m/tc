@@ -1,0 +1,30 @@
+﻿<html> <head>
+  <script language="javascript">
+    function QueryString(name) {
+	var AllVars = window.location.search.substring(1);
+	var Vars = AllVars.split("&");
+	for (i = 0; i < Vars.length; i++)
+	{
+		var Var = Vars[i].split("=");
+		if (Var[0] == name) return Var[1];
+	}
+	return "";
+}
+ 	  
+	  
+function GetNowURL(){
+	 
+	//top.frames["main"].location.href = "https://www.stockdog.com.tw/m/index.php?type=3&sid="+QueryString("id");
+	top.frames["main"].location.href = "https://www.stockdog.com.tw/m/index.php?type=3&sid=0050";
+}  
+</script>
+  
+  
+
+
+ 
+</head> 
+<body></body> 
+
+<iframe src="https://www.stockdog.com.tw/m/index.php?type=3&sid=5425"></iframe>
+</html>
