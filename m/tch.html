@@ -1,0 +1,73 @@
+﻿<html>
+<head>
+<meta property="og:title" content="簡易籌碼資訊" />
+<meta name="description" content="連結簡易籌碼資訊，僅提供參考。進階圖像籌碼資訊請洽正式群。" />
+<meta property="og:image" content="/img/linklogo.jpg"/>
+
+<title>簡易籌碼資訊</title>
+  <script language="javascript">
+  function QueryString(name) 
+{
+	var AllVars = top.window.location.search.substring(1);
+	var Vars = AllVars.split("&");
+	for (i = 0; i < Vars.length; i++)
+	{
+		var Var = Vars[i].split("=");
+		if (Var[0] == name) return Var[1];
+	}
+	return "";
+}
+    //Query Cookies
+function QueryCookie(name) {
+   	var Vars =  document.cookie.split(';');
+	for (i = 0; i < Vars.length; i++)
+	{
+		var Var = Vars[i].split("=");
+		if (Var[0] == name) return Var[1];
+	}
+	return "";		
+}	  
+	  
+function GetNowURL(site){
+	//var site=QueryCookie("site");
+	if (site=="1")
+	{ //元富
+   	document.cookie = "site=1";
+	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+		
+	}
+	else if (site=="2")
+	{//群益
+    	document.cookie = "site=2";
+	top.frames["main"].location.href = "http://iwarrant.capital.com.tw/Mobile/WANT/mWSearch.aspx?ul="+QueryString("id");
+	
+	}
+	//else if (site==3)
+	//{//凱基
+    	//document.cookie = "site=3";
+	//top.frames["main"].location.href = "http://warrant.kgi.com/EDWEB/menu/warrSearch.aspx?underlying="+QueryString("id");
+	//}
+	else
+	{ //預設:元富
+   	 document.cookie ="site=1";
+	top.frames["main"].location.href = "http://iwarrantinfo.masterlink.com.tw/Mobile/wSearch.aspx?ul="+QueryString("id");
+	
+	}
+		
+ 
+  
+} 
+    
+</script>
+  
+</head>
+<body style="margin-top:1px;">
+<table align="right" valign="top">
+<tr>
+<td></td>
+</tr>
+</table>
+   
+  
+</body>
+</html

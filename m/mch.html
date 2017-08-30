@@ -1,0 +1,30 @@
+﻿<html> <head>
+  <script language="javascript">
+    function QueryString(name) {
+	var AllVars = window.location.search.substring(1);
+	var Vars = AllVars.split("&");
+	for (i = 0; i < Vars.length; i++)
+	{
+		var Var = Vars[i].split("=");
+		if (Var[0] == name) return Var[1];
+	}
+	return "";
+}
+ 	  
+	  
+function GetNowURL(){
+	 
+	top.frames["main"].location.href = "https://www.stockdog.com.tw/m/index.php?type=3&sid="+QueryString("id");
+}  
+</script>
+  
+  
+<frameset rows="5,*"  frameborder="0" framespacing="0" onload="GetNowURL();">
+　 <frame name="top" src="tch.html" noresize="noresize" scrolling="no">
+  <frame name="main" src="about:blank">　　
+</frameset>
+
+ 
+</head> 
+<body></body> 
+</html>
